@@ -42,11 +42,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBooks.Location = new System.Drawing.Point(184, 15);
+            this.dataGridViewBooks.Location = new System.Drawing.Point(170, 15);
             this.dataGridViewBooks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewBooks.Name = "dataGridViewBooks";
             this.dataGridViewBooks.RowHeadersWidth = 51;
-            this.dataGridViewBooks.Size = new System.Drawing.Size(1121, 708);
+            this.dataGridViewBooks.Size = new System.Drawing.Size(1043, 629);
             this.dataGridViewBooks.TabIndex = 0;
             // 
             // btnAddBook
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 737);
+            this.ClientSize = new System.Drawing.Size(1226, 657);
             this.Controls.Add(this.btnDeleteBook);
             this.Controls.Add(this.btnEditBook);
             this.Controls.Add(this.btnAddBook);

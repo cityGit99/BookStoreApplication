@@ -55,10 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEditBookForm.cs">
+    <Compile Include="HelperDialog\AddEditBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEditBookForm.Designer.cs">
+    <Compile Include="HelperDialog\AddEditBookForm.Designer.cs">
       <DependentUpon>AddEditBookForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Author.cs">
@@ -86,6 +86,30 @@
       <DependentUpon>BookStoreDB.tt</DependentUpon>
     </Compile>
     <Compile Include="HelperDialogBox.cs" />
+    <Compile Include="HelperDialog\AuthorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperDialog\AuthorForm.Designer.cs">
+      <DependentUpon>AuthorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperDialog\GenreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperDialog\GenreForm.Designer.cs">
+      <DependentUpon>GenreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperDialog\PublisherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperDialog\PublisherForm.Designer.cs">
+      <DependentUpon>PublisherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperDialog\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperDialog\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,8 +142,17 @@
     <Compile Include="User.cs">
       <DependentUpon>BookStoreDB.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddEditBookForm.resx">
+    <EmbeddedResource Include="HelperDialog\AddEditBookForm.resx">
       <DependentUpon>AddEditBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperDialog\AuthorForm.resx">
+      <DependentUpon>AuthorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperDialog\GenreForm.resx">
+      <DependentUpon>GenreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperDialog\PublisherForm.resx">
+      <DependentUpon>PublisherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

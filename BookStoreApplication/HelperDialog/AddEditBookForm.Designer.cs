@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnAddGenre = new System.Windows.Forms.Button();
+            this.btnAddPublishingHouse = new System.Windows.Forms.Button();
+            this.btnAddAuthor = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dtpDateOfPublishing = new System.Windows.Forms.DateTimePicker();
@@ -54,16 +60,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnAddAuthor = new System.Windows.Forms.Button();
-            this.btnAddPublishingHouse = new System.Windows.Forms.Button();
-            this.btnAddGenre = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,17 +79,89 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(770, 628);
+            this.panel1.Size = new System.Drawing.Size(1035, 628);
             this.panel1.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Firebrick;
+            this.label12.Location = new System.Drawing.Point(31, 40);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(582, 20);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "* Author, Publishing House and Genre shall be add if it doesn\'t exist in the drop" +
+    " box!";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DimGray;
+            this.panel6.Location = new System.Drawing.Point(32, 549);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(719, 12);
+            this.panel6.TabIndex = 16;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel5.Controls.Add(this.btnAddGenre);
+            this.panel5.Controls.Add(this.btnAddPublishingHouse);
+            this.panel5.Controls.Add(this.btnAddAuthor);
+            this.panel5.Location = new System.Drawing.Point(776, 87);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(52, 455);
+            this.panel5.TabIndex = 15;
+            // 
+            // btnAddGenre
+            // 
+            this.btnAddGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAddGenre.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddGenre.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddGenre.Location = new System.Drawing.Point(7, 182);
+            this.btnAddGenre.Name = "btnAddGenre";
+            this.btnAddGenre.Size = new System.Drawing.Size(41, 33);
+            this.btnAddGenre.TabIndex = 2;
+            this.btnAddGenre.Text = "+";
+            this.btnAddGenre.UseVisualStyleBackColor = false;
+            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
+            // 
+            // btnAddPublishingHouse
+            // 
+            this.btnAddPublishingHouse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAddPublishingHouse.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPublishingHouse.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddPublishingHouse.Location = new System.Drawing.Point(6, 100);
+            this.btnAddPublishingHouse.Name = "btnAddPublishingHouse";
+            this.btnAddPublishingHouse.Size = new System.Drawing.Size(41, 33);
+            this.btnAddPublishingHouse.TabIndex = 1;
+            this.btnAddPublishingHouse.Text = "+";
+            this.btnAddPublishingHouse.UseVisualStyleBackColor = false;
+            this.btnAddPublishingHouse.Click += new System.EventHandler(this.btnAddPublishingHouse_Click);
+            // 
+            // btnAddAuthor
+            // 
+            this.btnAddAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAddAuthor.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAuthor.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddAuthor.Location = new System.Drawing.Point(6, 50);
+            this.btnAddAuthor.Name = "btnAddAuthor";
+            this.btnAddAuthor.Size = new System.Drawing.Size(41, 33);
+            this.btnAddAuthor.TabIndex = 0;
+            this.btnAddAuthor.Text = "+";
+            this.btnAddAuthor.UseVisualStyleBackColor = false;
+            this.btnAddAuthor.Click += new System.EventHandler(this.btnAddAuthor_Click);
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnSave.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(618, 568);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(133, 47);
             this.btnSave.TabIndex = 14;
@@ -111,7 +183,7 @@
             this.panel4.Controls.Add(this.txtNumberOfPages);
             this.panel4.Controls.Add(this.txtBookName);
             this.panel4.Location = new System.Drawing.Point(247, 87);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(451, 455);
             this.panel4.TabIndex = 13;
@@ -120,7 +192,7 @@
             // 
             this.dtpDateOfPublishing.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDateOfPublishing.Location = new System.Drawing.Point(20, 223);
-            this.dtpDateOfPublishing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDateOfPublishing.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDateOfPublishing.Name = "dtpDateOfPublishing";
             this.dtpDateOfPublishing.Size = new System.Drawing.Size(412, 29);
             this.dtpDateOfPublishing.TabIndex = 9;
@@ -130,7 +202,7 @@
             this.chkIsSequel.AutoSize = true;
             this.chkIsSequel.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkIsSequel.Location = new System.Drawing.Point(20, 356);
-            this.chkIsSequel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkIsSequel.Margin = new System.Windows.Forms.Padding(4);
             this.chkIsSequel.Name = "chkIsSequel";
             this.chkIsSequel.Size = new System.Drawing.Size(125, 26);
             this.chkIsSequel.TabIndex = 8;
@@ -142,7 +214,7 @@
             this.cmbStatus.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbStatus.FormattingEnabled = true;
             this.cmbStatus.Location = new System.Drawing.Point(20, 394);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(412, 31);
             this.cmbStatus.TabIndex = 7;
@@ -152,7 +224,7 @@
             this.cmbGenre.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGenre.FormattingEnabled = true;
             this.cmbGenre.Location = new System.Drawing.Point(20, 181);
-            this.cmbGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbGenre.Margin = new System.Windows.Forms.Padding(4);
             this.cmbGenre.Name = "cmbGenre";
             this.cmbGenre.Size = new System.Drawing.Size(412, 31);
             this.cmbGenre.TabIndex = 6;
@@ -162,7 +234,7 @@
             this.cmbPublishingHouse.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPublishingHouse.FormattingEnabled = true;
             this.cmbPublishingHouse.Location = new System.Drawing.Point(20, 101);
-            this.cmbPublishingHouse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPublishingHouse.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPublishingHouse.Name = "cmbPublishingHouse";
             this.cmbPublishingHouse.Size = new System.Drawing.Size(412, 31);
             this.cmbPublishingHouse.TabIndex = 5;
@@ -172,7 +244,7 @@
             this.cmbAuthor.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAuthor.FormattingEnabled = true;
             this.cmbAuthor.Location = new System.Drawing.Point(20, 49);
-            this.cmbAuthor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbAuthor.Margin = new System.Windows.Forms.Padding(4);
             this.cmbAuthor.Name = "cmbAuthor";
             this.cmbAuthor.Size = new System.Drawing.Size(412, 31);
             this.cmbAuthor.TabIndex = 4;
@@ -181,7 +253,7 @@
             // 
             this.txtPrimceCost.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrimceCost.Location = new System.Drawing.Point(20, 262);
-            this.txtPrimceCost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrimceCost.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrimceCost.Name = "txtPrimceCost";
             this.txtPrimceCost.Size = new System.Drawing.Size(412, 29);
             this.txtPrimceCost.TabIndex = 3;
@@ -190,7 +262,7 @@
             // 
             this.txtSalePrice.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalePrice.Location = new System.Drawing.Point(20, 309);
-            this.txtSalePrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalePrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalePrice.Name = "txtSalePrice";
             this.txtSalePrice.Size = new System.Drawing.Size(412, 29);
             this.txtSalePrice.TabIndex = 2;
@@ -199,7 +271,7 @@
             // 
             this.txtNumberOfPages.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumberOfPages.Location = new System.Drawing.Point(20, 142);
-            this.txtNumberOfPages.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumberOfPages.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumberOfPages.Name = "txtNumberOfPages";
             this.txtNumberOfPages.Size = new System.Drawing.Size(412, 29);
             this.txtNumberOfPages.TabIndex = 1;
@@ -208,7 +280,7 @@
             // 
             this.txtBookName.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBookName.Location = new System.Drawing.Point(20, 7);
-            this.txtBookName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBookName.Margin = new System.Windows.Forms.Padding(4);
             this.txtBookName.Name = "txtBookName";
             this.txtBookName.Size = new System.Drawing.Size(412, 29);
             this.txtBookName.TabIndex = 0;
@@ -227,7 +299,7 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(33, 87);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(204, 455);
             this.panel3.TabIndex = 12;
@@ -346,7 +418,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Location = new System.Drawing.Point(32, 67);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(719, 12);
             this.panel2.TabIndex = 1;
@@ -362,96 +434,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter Book Information";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.btnAddGenre);
-            this.panel5.Controls.Add(this.btnAddPublishingHouse);
-            this.panel5.Controls.Add(this.btnAddAuthor);
-            this.panel5.Location = new System.Drawing.Point(699, 87);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(52, 455);
-            this.panel5.TabIndex = 15;
-            // 
-            // btnAddAuthor
-            // 
-            this.btnAddAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAddAuthor.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAuthor.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddAuthor.Location = new System.Drawing.Point(6, 50);
-            this.btnAddAuthor.Name = "btnAddAuthor";
-            this.btnAddAuthor.Size = new System.Drawing.Size(41, 33);
-            this.btnAddAuthor.TabIndex = 0;
-            this.btnAddAuthor.Text = "+";
-            this.btnAddAuthor.UseVisualStyleBackColor = false;
-            this.btnAddAuthor.Click += new System.EventHandler(this.btnAddAuthor_Click);
-            // 
-            // btnAddPublishingHouse
-            // 
-            this.btnAddPublishingHouse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAddPublishingHouse.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPublishingHouse.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddPublishingHouse.Location = new System.Drawing.Point(6, 100);
-            this.btnAddPublishingHouse.Name = "btnAddPublishingHouse";
-            this.btnAddPublishingHouse.Size = new System.Drawing.Size(41, 33);
-            this.btnAddPublishingHouse.TabIndex = 1;
-            this.btnAddPublishingHouse.Text = "+";
-            this.btnAddPublishingHouse.UseVisualStyleBackColor = false;
-            this.btnAddPublishingHouse.Click += new System.EventHandler(this.btnAddPublishingHouse_Click);
-            // 
-            // btnAddGenre
-            // 
-            this.btnAddGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAddGenre.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddGenre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddGenre.Location = new System.Drawing.Point(7, 182);
-            this.btnAddGenre.Name = "btnAddGenre";
-            this.btnAddGenre.Size = new System.Drawing.Size(41, 33);
-            this.btnAddGenre.TabIndex = 2;
-            this.btnAddGenre.Text = "+";
-            this.btnAddGenre.UseVisualStyleBackColor = false;
-            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
-            this.panel6.Location = new System.Drawing.Point(32, 549);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(719, 12);
-            this.panel6.TabIndex = 16;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Firebrick;
-            this.label12.Location = new System.Drawing.Point(31, 40);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(582, 20);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "* Author, Publishing House and Genre shall be add if it doesn\'t exist in the drop" +
-    " box!";
-            // 
             // AddEditBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 628);
+            this.ClientSize = new System.Drawing.Size(1035, 628);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddEditBookForm";
             this.Text = "AddEditBookForm";
             this.Load += new System.EventHandler(this.AddEditBookForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
